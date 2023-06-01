@@ -36,4 +36,21 @@ else if (delta == 0)
     Console.WriteLine("Çakışık iki kök var");
 else
     Console.WriteLine("Reel kök yok...");
+    
+    
+//Soru 4:Kullanıcı tarafından girilen kullanıcı adı ve şifre bilgisinin dogru olup olmadığını kontrol eden kodu yazınız?
+
+string kullanici, sifre;
+
+Console.WriteLine("Kullanıcı adını giriniz?");
+kullanici = Console.ReadLine();
+Console.WriteLine("Sifre giriniz");
+sifre= Console.ReadLine();
+
+if (kullanici == "Admin" && sifre == "Admin123")
+{
+    Console.WriteLine("DOGRU");
+}
+else
+    Console.WriteLine("Kullanıcı adı veya sifre yanlis");
 
