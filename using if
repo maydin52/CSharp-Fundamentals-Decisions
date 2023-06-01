@@ -15,4 +15,25 @@ else if (sayi < 10)
     Console.WriteLine("Sayi 10 dan kucuk...");
 else
     Console.WriteLine("Sayi 10'a esit...");
+    
+    
+//Soru 2: 2. dereceden denklemlerin koklerinin incelenmesi...
+
+int a, b, c, delta;
+
+Console.Write("a katsayısını giriniz");
+a = int.Parse(Console.ReadLine());
+Console.Write("b katsayısını giriniz");
+b = int.Parse(Console.ReadLine());
+Console.Write("c katsayısını giriniz");
+c = int.Parse(Console.ReadLine());
+
+delta = b * b - (4 * a * c);
+
+if (delta > 0)
+    Console.WriteLine("Reel İki kök vardir...");
+else if (delta == 0)
+    Console.WriteLine("Çakışık iki kök var");
+else
+    Console.WriteLine("Reel kök yok...");
 
