@@ -1,0 +1,18 @@
+int sayi = 10;
+
+//Sart Ifadelerini boyle kullanmamak gerekir...
+//if (sayi > 10)
+//    Console.WriteLine("Sayi 10 dan buyuk...");
+//if(sayi<10)
+//    Console.WriteLine("Sayi 10 dan kucuk...");
+//if(sayi ==10)
+//    Console.WriteLine("Sayi 10'a esit...");
+
+//Tercih edilmeli...
+if (sayi > 10)
+    Console.WriteLine("Sayi 10 dan buyuk...");
+else if (sayi < 10)
+    Console.WriteLine("Sayi 10 dan kucuk...");
+else
+    Console.WriteLine("Sayi 10'a esit...");
+
