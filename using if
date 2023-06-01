@@ -17,6 +17,18 @@ else
     Console.WriteLine("Sayi 10'a esit...");
     
     
+//Scope Op
+
+//KURAL:Sart cumlesinden sonra sadece tek bir komut varsa {} kullanmaya gerek yok... Birden fazla komut çalışıcaksa scope op. kullanmak gerekir...
+if (4 == 4)
+{ 
+    Console.WriteLine("Bir");
+
+    Console.WriteLine("Uc");
+    Console.WriteLine("Ikı");
+}
+    
+    
 //Soru 2: 2. dereceden denklemlerin koklerinin incelenmesi...
 
 int a, b, c, delta;
