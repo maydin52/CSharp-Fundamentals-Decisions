@@ -1,0 +1,22 @@
+int sayi = 3;
+
+switch (sayi)
+{
+    case 1:
+        Console.WriteLine("Bir");
+        break;
+
+    case 2:
+        Console.WriteLine("İki");
+        break;
+    case 3:
+        Console.WriteLine("Uc");
+        break;
+    case 4:
+    case 5:
+        Console.WriteLine("dort veya bes");
+        break;
+    default:
+        Console.WriteLine("12345 degerleri dışında bir deger");
+        break;
+}
