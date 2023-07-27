@@ -66,3 +66,51 @@ if (kullanici == "Admin" && sifre == "Admin123")
 else
     Console.WriteLine("Kullanıcı adı veya sifre yanlis");
 
+-----------------------------------------------------------------------------------------------
+
+//Console.Write("Kullanıcı Adı Giriniz: ");
+      //string kullaniciAdi = Console.ReadLine();
+
+      //Console.Write("Şifre Giriniz : ");
+      //string sifre = Console.ReadLine();
+
+      //if (kullaniciAdi == "admin" && sifre == "123456")
+      //{
+      //  Console.WriteLine("Tebrikler Giriş Yaptınız.");
+      //}
+      //else
+      //{
+      //  Console.WriteLine("Kullanıcı adınız yada şifrenizi kontrol ediniz !");
+      //}
+
+
+
+//Dısarıdan urun adi girilicek , kasiyer bize urunun hangi reyonda oldugunu soyleyecek
+      // Domates , Biber , Patlican => sebze reyonu
+      //Parfüm, diş macunu , şampuan => kozmetik reyonu
+      // Cep telefonı , bilgisayar, ses sistem => teknoloji reyonu
+      // başka bir ürün girilirse 'Bu Ürün Bizde Yok' uyarısı.
+
+      string message;
+      Console.Write("Urun: ");
+      string product = Console.ReadLine();
+
+      if(product == "Domates" || product == "Biber" || product == "Patlıcan")
+      {
+        message = "Sebze reyonuna gidin";
+      }
+      else if (product == "Diş Macunu" || product == "Parfüm" || product == "Şampuan")
+      {
+        message = "Kozmetik reyonuna gidin";
+      }
+      else if (product == "Cep Telefonu" || product == "Bilgisayar" || product == "Ses Sistemi")
+      {
+        message = "Teknoloji reyonuna gidin";
+      }
+      else
+      {
+        message = "Bu ürün yok";
+      }
+
+      Console.Write(message);
+
