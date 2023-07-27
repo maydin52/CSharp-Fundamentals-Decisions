@@ -1,0 +1,77 @@
+#region TernaryIf
+
+/*
+
+// girilen bir sayının çift yada tek olduğunu bulan algoritma
+
+Console.WriteLine("Bir sayı giriniz");
+int sayi = 0; 	
+bool sayiMi = int.TryParse(Console.ReadLine(), out sayi);
+// tryParse sayesinde try cacth yazmadan kullanıcının girdiği değerin sayı olup olmadığını anlayabilirz. eğer değer sayı ise sayi değişkenine console okunan değer atanacaktır. out keyword değerin tryParse işlemi sonrasında dışarı çıkıp sayi değişkene atanması için yazılan özel bir durumdur.
+
+if (!sayiMi) // sayi != true yada sayi == false (! not ekini ekliyor)
+{
+	Console.WriteLine("Sayısal bir değer giriniz");
+}
+else
+{
+
+  //int sayi3 = sayi > 2 ? 5 : 7;
+
+  // sayıyı pozitif yap
+  //if(sayi < 0)
+  //{
+  //	sayi = sayi * -1;
+  //}
+
+  sayi = sayi < 0 ? sayi * -1 : sayi; // sayı negatif ise sayıyı pozitif değer yap , mutlak değer işlemi
+
+  //if(sayi % 2 == 1)
+  //{
+  //	tekMi = true;
+  //}
+  //else
+  //{
+  //	tekMi = false;
+  //}
+
+  bool tekMi = (sayi % 2 == 1) ? true : false;
+
+  //if (tekMi) // tekMi == true (! önüne ünlem gelmez is doğruuğu kontrol eder)
+  //{
+  //  Console.WriteLine("Sayı Tek");
+  //}
+  //else
+  //{
+  //  Console.WriteLine("Sayı Çift");
+  //}
+
+  Console.WriteLine("Sayı" + ((tekMi) ? "tek" : "çift"));
+
+
+  //string sonuc = tekMi ? "tek" : "çift";
+  // Console.WriteLine($"Sayı: {sonuc}");
+
+
+
+  //void f = sayi % 2 == 1 ? Console.WriteLine("Tek") : Console.WriteLine("Çift"); 
+
+
+}
+*/
+
+#endregion
+
+-----------------------------------------------------------------------------
+
+// girilen bir sayının pozitif negatif ve sıfıra eşit olduğunu bulan algoritmayı ternay if ile yazalım.
+
+#region Ternary2
+
+Console.WriteLine("Sayı giriniz");
+int sayi = int.Parse(Console.ReadLine());
+
+string sonuc = (sayi == 0) ? "sıfır" : (sayi > 0) ? "pozitif" : "negatif";
+Console.WriteLine($"Sonuc : {sonuc}");
+
+#endregion
